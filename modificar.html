@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificar</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="modificar.ico" type="image/x-icon">
+</head>
+<body>
+    <form action="http://moralo.atwebpages.com/patrones/patron2/ModificarPatron2.php" method="POST">
+
+        <fieldset>
+            <legend>Buscar valor:</legend>
+
+            <!--tarjeta de credito-->
+            <label id="patern1">tarjeta crédito
+                <input required type="text" name="P1" id="P1" placeholder="1234-5678-1234-5468" 
+                pattern="[0-9]{4}([-, ]?)[0-9]{4}\1[0-9]{4}\1[0-9]{4}">
+            </label>
+
+        </fieldset>
+
+        <fieldset>
+
+            <legend>Valores a Modificar:</legend>
+             <!--iban-->
+             <label id="patern2">IBAN
+                <input required type="text" name="P2" id="P2" placeholder="ES12-1234-1234-5678-1234-5468" 
+                pattern="ES[0-9]{2}([-, ]?)[0-9]{4}\1[0-9]{4}\1[0-9]{4}\1[0-9]{4}\1[0-9]{4}">
+            </label>
+
+            <!--correo gmail-->
+            <label id="patern3">correo gmail
+                <input required type="email" name="P3" id="P3"  placeholder="aaa@hmail.com" pattern="[a-z][A-Z,a-z,0-9]{2,49}@gmail.com">
+            </label>
+
+            <!--1-20 y del 30 al 50-->
+            <label id="patern4">1-20 y del 30 al 50
+                <input required type="text" name="P4" id="P4" placeholder="1-20 y del 30 al 50" pattern="[1-20-30-50]{1,2}">
+            </label>
+
+            <!--1 ó 2-->
+            <label id="patern5">1 ó 2
+                <input required type="text" name="P5" id="P5" placeholder="1 ó 2" pattern="[1|2]">
+            </label>
+            
+        </fieldset>
+
+        <fieldset>
+            
+        <!--boton de validar-->
+        <input type="submit" class="btnValidar" value="insertar">
+        <input type="reset" class="btnResetear" value="limpiar">
+   
+        </fieldset>
+
+    </form>
+    <iframe src="http://moralo.atwebpages.com/patrones/patron2"></iframe>
+</body>
+</html>

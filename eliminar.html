@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="eliminar.ico" type="image/x-icon">
+    <title>Eliminar</title>
+</head>
+<body>
+    <form action="http://moralo.atwebpages.com/patrones/patron2/EliminarPatron2.php">
+        <fieldset>
+            <legend>Buscar valor:</legend>
+
+            <!--tarjeta de credito-->
+            <label id="patern1">tarjeta crédito
+                <input required type="text" name="P1" id="P1" placeholder="1234-5678-1234-5468" 
+                pattern="[0-9]{4}([-, ]?)[0-9]{4}\1[0-9]{4}\1[0-9]{4}">
+            </label>
+
+        </fieldset>
+
+        <input type="reset" value="Borrar"><br>
+
+    </form>
+
+    <iframe src="http://moralo.atwebpages.com/patrones/patron2"></iframe>
+    
+</body>
+</html>
